@@ -1,4 +1,6 @@
-<?php
+<?php 
+namespace Pigfly\Aliyun\Core\Auth;
+
 /*
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
@@ -19,17 +21,22 @@
  */
 class ShaHmac256Signer implements ISigner
 {
-	public function signString($source, $accessSecret)
-	{
-		return	base64_encode(hash_hmac('sha256', $source, $accessSecret, true));
-	}
-	
-	public function  getSignatureMethod() {
-		return "HMAC-SHA256";
-	}
 
-	public function getSignatureVersion() {
-		return "1.0";
-	}
+    public function signString($source, $accessSecret)
+    {
+        return base64_encode(hash_hmac('sha256', $source, $accessSecret, true));
+    }
+
+
+    public function  getSignatureMethod()
+    {
+        return "HMAC-SHA256";
+    }
+
+
+    public function getSignatureVersion()
+    {
+        return "1.0";
+    }
 
 }

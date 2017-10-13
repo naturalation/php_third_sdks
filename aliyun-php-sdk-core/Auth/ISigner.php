@@ -1,4 +1,6 @@
-<?php
+<?php 
+namespace Pigfly\Aliyun\Core\Auth;
+
 /*
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
@@ -19,9 +21,12 @@
  */
 interface ISigner
 {
-	public function  getSignatureMethod();
-	
-	public function  getSignatureVersion();
-	
-	public function signString($source, $accessSecret); 
+
+    public function  getSignatureMethod();
+
+
+    public function  getSignatureVersion();
+
+
+    public function signString($source, $accessSecret);
 }

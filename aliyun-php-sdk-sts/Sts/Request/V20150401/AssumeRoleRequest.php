@@ -17,7 +17,8 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-namespace Sts\Request\V20150401;
+namespace PigFly\Aliyun\Sts\Sts\Request\V20150401;
+use PigFly\Aliyun\Core\RpcAcsRequest;
 
 class AssumeRoleRequest extends \RpcAcsRequest
 {

@@ -1,5 +1,5 @@
 <?php 
-namespace Pigfly\Aliyun\Core\Regions;
+namespace Pigfly\Aliyun\Core\Exceptions;
 
 /*
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -19,42 +19,58 @@ namespace Pigfly\Aliyun\Core\Regions;
  * specific language governing permissions and limitations
  * under the License.
  */
-class ProductDomain
+class ClientException extends \Exception
 {
 
-    private $productName;
+    private $errorCode;
 
-    private $domainName;
+    private $errorMessage;
+
+    private $errorType;
 
 
-    public function  __construct($product, $domain)
+    public function  __construct($errorMessage, $errorCode)
     {
-        $this->productName = $product;
-        $this->domainName  = $domain;
+        parent::__construct($errorMessage);
+        $this->errorMessage = $errorMessage;
+        $this->errorCode    = $errorCode;
+        $this->setErrorType("Client");
     }
 
 
-    public function getProductName()
+    public function getErrorCode()
     {
-        return $this->productName;
+        return $this->errorCode;
     }
 
 
-    public function setProductName($productName)
+    public function setErrorCode($errorCode)
     {
-        $this->productName = $productName;
+        $this->errorCode = $errorCode;
     }
 
 
-    public function getDomainName()
+    public function getErrorMessage()
     {
-        return $this->domainName;
+        return $this->errorMessage;
     }
 
 
-    public function setDomainName($domainName)
+    public function setErrorMessage($errorMessage)
     {
-        $this->domainName = $domainName;
+        $this->errorMessage = $errorMessage;
+    }
+
+
+    public function getErrorType()
+    {
+        return $this->errorType;
+    }
+
+
+    public function setErrorType($errorType)
+    {
+        $this->errorType = $errorType;
     }
 
 }

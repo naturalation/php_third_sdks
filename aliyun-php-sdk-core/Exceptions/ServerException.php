@@ -1,5 +1,6 @@
 <?php 
-namespace Pigfly\Aliyun\Core\Profile;
+namespace Pigfly\Aliyun\Core\Exceptions;
+
 
 /*
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -19,17 +20,13 @@ namespace Pigfly\Aliyun\Core\Profile;
  * specific language governing permissions and limitations
  * under the License.
  */
-interface IClientProfile
+class ServerException extends ClientException
 {
 
-    public function getSigner();
+    public function  __construct($errorMessage, $errorCode)
+    {
+        parent::__construct($errorMessage, $errorCode);
+        $this->setErrorType("Server");
+    }
 
-
-    public function getRegionId();
-
-
-    public function getFormat();
-
-
-    public function getCredential();
 }
