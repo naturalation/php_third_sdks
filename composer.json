@@ -1,0 +1,25 @@
+{
+    "name": "PigFly/AliyunSdks",
+    "type": "library",
+    "description": "阿里云SDK集合整理",
+    "homepage": "https://github.com/naturalation/AliyunSdks.git",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "PigFly",
+            "email": "793359761@qq.com",
+            "homepage": "https://www.xinxuntech.com/",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PigFly\\": ""
+        }
+    },
+    "minimum-stability":"dev",
+    "require": {
+        "php": ">=5.6.0",
+        "ext-openssl":"*"
+    },
+}
