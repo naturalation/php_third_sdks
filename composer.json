@@ -1,12 +1,12 @@
 {
-    "name": "PigFly/AliyunSdks",
+    "name": "pigfly/AliyunSdks",
     "type": "library",
     "description": "阿里云SDK集合整理",
     "homepage": "https://github.com/naturalation/AliyunSdks.git",
     "license": "MIT",
     "authors": [
         {
-            "name": "PigFly",
+            "name": "pigfly",
             "email": "793359761@qq.com",
             "homepage": "https://www.xinxuntech.com/",
             "role": "Developer"
@@ -14,7 +14,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "PigFly\\": ""
+            "pigfly\\": ""
         }
     },
     "minimum-stability":"dev",
