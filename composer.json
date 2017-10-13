@@ -14,9 +14,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "Pigfly\\Aliyun\\Core\\": "aliyun-php-sdk-core/",
             "Pigfly\\Aliyun\\Sts\\": "aliyun-php-sdk-sts/",
-            "Pigfly\\Aliyun\\Aop\\": "alipay-sdk-PHP-20170725114612/"
         }
     },
     "minimum-stability":"dev",
@@ -26,7 +24,7 @@
     },
     "extra": {
         "branch-alias": {
-          "dev-master": "1.3.x-dev"
+          "dev-master": "1.5.x-dev"
         }
     }
 }

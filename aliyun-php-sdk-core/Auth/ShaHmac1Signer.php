@@ -1,6 +1,4 @@
-<?php 
-namespace Pigfly\Aliyun\Core\Auth;
-
+<?php
 /*
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
@@ -21,22 +19,17 @@ namespace Pigfly\Aliyun\Core\Auth;
  */
 class ShaHmac1Signer implements ISigner
 {
+	public function signString($source, $accessSecret)
+	{
+		return	base64_encode(hash_hmac('sha1', $source, $accessSecret, true));
+	}
+	
+	public function  getSignatureMethod() {
+		return "HMAC-SHA1";
+	}
 
-    public function signString($source, $accessSecret)
-    {
-        return base64_encode(hash_hmac('sha1', $source, $accessSecret, true));
-    }
-
-
-    public function  getSignatureMethod()
-    {
-        return "HMAC-SHA1";
-    }
-
-
-    public function getSignatureVersion()
-    {
-        return "1.0";
-    }
+	public function getSignatureVersion() {
+		return "1.0";
+	}
 
 }

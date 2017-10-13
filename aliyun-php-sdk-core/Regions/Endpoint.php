@@ -1,6 +1,4 @@
-<?php 
-namespace Pigfly\Aliyun\Core\Regions;
-
+<?php
 /*
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
@@ -21,54 +19,44 @@ namespace Pigfly\Aliyun\Core\Regions;
  */
 class Endpoint
 {
-
-    private $name;
-
-    private $regionIds;
-
-    private $productDomains;
-
-
-    public function  __construct($name, $regionIds, $productDomains)
-    {
-        $this->name           = $name;
-        $this->regionIds      = $regionIds;
-        $this->productDomains = $productDomains;
-    }
-
-
-    public function getName()
-    {
-        return $this->name;
-    }
-
-
-    public function setName($name)
-    {
-        $this->name = $name;
-    }
-
-
-    public function getRegionIds()
-    {
-        return $this->regionIds;
-    }
-
-
-    public function setRegionIds($regionIds)
-    {
-        $this->regionIds = $regionIds;
-    }
-
-
-    public function getProductDomains()
-    {
-        return $this->productDomains;
-    }
-
-
-    public function setProductDomains($productDomains)
-    {
-        $this->productDomains = $productDomains;
-    }
+	private $name;
+	private $regionIds; 
+	private $productDomains;
+	
+	function  __construct($name, $regionIds, $productDomains)
+	{
+		$this->name = $name;
+		$this->regionIds = $regionIds;
+		$this->productDomains = $productDomains;
+	}
+	
+	public function getName()
+	{
+		return $this->name;
+	}
+	
+	public function setName($name)
+	{
+		$this->name = $name;
+	}
+	
+	public function getRegionIds()
+	{
+		return $this->regionIds;
+	}
+	
+	public function setRegionIds($regionIds)
+	{
+		$this->regionIds = $regionIds;
+	}
+	
+	public function getProductDomains()
+	{
+		return $this->productDomains;
+	}
+	
+	public function setProductDomains($productDomains)
+	{
+		$this->productDomains = $productDomains;
+	}
 }

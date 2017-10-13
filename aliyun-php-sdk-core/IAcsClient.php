@@ -1,6 +1,4 @@
-<?php 
-namespace Pigfly\Aliyun\Core;
-
+<?php
 /*
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
@@ -21,6 +19,5 @@ namespace Pigfly\Aliyun\Core;
  */
 interface IAcsClient
 {
-
-    public function doAction($requst);
+	public function doAction($requst);
 }

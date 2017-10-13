@@ -1,6 +1,4 @@
-<?php 
-namespace Pigfly\Aliyun\Core\Profile;
-
+<?php
 /*
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
@@ -21,15 +19,11 @@ namespace Pigfly\Aliyun\Core\Profile;
  */
 interface IClientProfile
 {
-
-    public function getSigner();
-
-
-    public function getRegionId();
-
-
-    public function getFormat();
-
-
-    public function getCredential();
+	public function getSigner();
+	
+	public function getRegionId();
+	
+	public function getFormat();
+	
+	public function getCredential();
 }
