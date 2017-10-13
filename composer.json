@@ -1,5 +1,5 @@
 {
-    "name": "pigfly/aliyun-sdks",
+    "name": "pigfly/third-sdks",
     "type": "library",
     "description": "阿里云SDK集合整理",
     "homepage": "https://github.com/naturalation/AliyunSdks.git",
@@ -24,7 +24,7 @@
     },
     "extra": {
         "branch-alias": {
-          "dev-master": "1.5.x-dev"
+          "dev-master": "1.6.x-dev"
         }
     }
 }
