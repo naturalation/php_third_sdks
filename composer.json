@@ -14,8 +14,8 @@
     ],
     "autoload": {
         "psr-4": {
-            "pigfly\\Aliyun\\Core\\": "aliyun-php-sdk-core/"
-            "pigfly\\Aliyun\\Sts\\": "aliyun-php-sdk-sts/"
+            "pigfly\\Aliyun\\Core\\": "aliyun-php-sdk-core/",
+            "pigfly\\Aliyun\\Sts\\": "aliyun-php-sdk-sts/",
             "pigfly\\Aliyun\\Aop\\": "alipay-sdk-PHP-20170725114612/"
         }
     },
