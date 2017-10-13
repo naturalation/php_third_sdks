@@ -1,12 +1,12 @@
 {
-    "name": "pigfly/third-sdks",
+    "name": "xinxun/third-sdks",
     "type": "library",
     "description": "阿里云SDK集合整理",
     "homepage": "https://github.com/naturalation/AliyunSdks.git",
     "license": "MIT",
     "authors": [
         {
-            "name": "pigfly",
+            "name": "xinxun",
             "email": "793359761@qq.com",
             "homepage": "https://www.xinxuntech.com/",
             "role": "Developer"
